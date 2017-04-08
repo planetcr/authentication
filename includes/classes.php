@@ -10,19 +10,19 @@ function openDB()
 	//          agencyCellCarrier int(2),agencyCellPhone varchar(64), purchasedClaimApp int(2), purchasedSurveyApp int(2), purchasedMapApp int(2), PRIMARY KEY  (ID));
 
 	// INSERT INTO agencies (agencyName, agencyPhone, agencyEmail, agencyCellCarrier, agencyCellPhone, purchasedClaimApp, purchasedSurveyApp, purchasedMapApp) VALUES \
-	//	    ('Just Testing','319-265-0024','root@planetcr.com','3','3195213226','1','1','1');
+	//	    ('Just Testing','319-555-1212','root@planetcr.com','3','3195551212','1','1','1');
 
 	// CREATE TABLE users (ID int(11) AUTO_INCREMENT,userName varchar(64) NOT NULL,password varchar(64) NOT NULL, agencyID int(11) NOT NULL, userEmail varchar(64) NOT NULL, \
 	// 	    userPermissions int(16) NOT NULL, previousPassword varchar(64), lastpasswordSet int(16), lastLogin int(16), rememberMeCookie varchar(64), \
 	//	    userCellCarrier int(2), userCellPhone varchar(64), PRIMARY KEY  (ID));
 
 	// INSERT INTO users (userName, password, agencyID, userEmail, userPermissions) VALUES \
-	//	    ('sgarringer', '$2y$10$VNSTF.bX2nI1wo0/OpITzOL7mXLM7R/wz3Q3cMeTMc6pKlfkVl9wK', '1', 'sgarringer@gmail.com',999);
+	//	    ('admin', '$2y$10$VNSTF.bX2nI1wo0/OpITzOL7mXLM7R/wz3Q3cMeTMc6pKlfkVl9wK', '1', 'sgarringer@gmail.com',999);
 
 	$DB_HOST = "localhost";
-	$DB_NAME = "planetcr_mainapp";
-	$DB_USER = "planetcr_mainappusr";
-	$DB_PASS = "planetcr";
+	$DB_NAME = "app";
+	$DB_USER = "usr";
+	$DB_PASS = "pass";
 
 	$conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 	$conn->set_charset("utf8");
